@@ -1,55 +1,28 @@
-# Introduction to OWASP Top 10 2021
+# Einführung in die OWASP Top 10 für 2021
 
-Welcome to the latest installment of the OWASP Top 10! The OWASP Top 10
-2021 is all-new, with a new graphic design and an available one-page
-infographic you can print or obtain from our home page.
+Willkommen zur neuesten Version der OWASP Top 10! Diese Version wurde komplett überarbeitet. Sie kommt im neuen Design und mit einer Infografik zum Ausdrucken oder zur digitalen Verwendung.
 
-A huge thank you to everyone that contributed their time and data for
-this iteration. Without you, this installment would not happen. **THANK
-YOU**.
+Ein riesiges Dankeschön an alle, die und ihre Zeit und Daten für diese Fassung zur Verfügung gestellt haben. Ohne euch wäre diese Version nicht zustande gekommen. **TAUSEND DANK**.
 
-## What's changed in the Top 10 for 2021
+## Was sich in der neuen Fassung geändert hat
 
-There are three new categories, four categories with naming and scoping
-changes, and some consolidation in the Top 10 for 2021.
+In den Top 10 für 2021 gibt es drei neue Kategorien, vier Kategorien mit geändertem Namen und Geltungsbereich und einige Konsolidierungen.
 
-<img src="./assets/image1.png" style="width:6.5in;height:1.78889in" alt="Mapping of the relationship between the Top 10 2017 and the new Top 10 2021" />
+<img src="./assets/image1.png" style="width:6.5in;height:1.78889in" alt="Mapping der 2017er Top 10 2017 auf die neuen Top 10 2021" />
 
-**A01:2021-Broken Access Control** moves up from the fifth position; 94%
-of applications were tested for some form of broken access control. The
-34 CWEs mapped to Broken Access Control had more occurrences in
-applications than any other category.
+**A01:2021-Fehler in der Zugriffskontrolle** setzt sich aus der vormals fünften Position heraus an die Spitze. Aus den uns übermittelten Daten wurden 94%
+der enthaltenen Anwendungen auf verschiedenste Fehler in der Zugriffskontrolle getestet. Die 34 CWEs, die Fehlern in der Zugriffskontrolle zugeordnet waren, wurden in Anwendungen öfter gefunden als jede andere Kategorie.
 
-**A02:2021-Cryptographic Failures** shifts up one position to #2,
-previously known as *Sensitive Data Exposure,* which was broad symptom
-rather than a root cause. The renewed focus here is on failures related
-to cryptography which often leads to sensitive data exposure or system
-compromise.
+**A02:2021-Kryptografiebezogene Fehler** sind von dritter Stelle auf Rang zwei aufgerückt. In der vorherigen Version hießen diese noch  *Verlust der Vertraulichkeit sensibler Daten*, doch war dies eher ein diffuses Symptom anstatt der zugrunde liegenden Ursache. Der Fokus in der neuen Version sind jetzt Fehler die durch den unsachgemäßen Einsatz von Kryptographie entstehen und zum Verlust der Vertraulichkeit sensibler Daten oder einer Kompromittierung von Systemen führen.
 
-**A03:2021-Injection** slides down to the third position. 94% of the
-applications were tested for some form of injection, and the 33 CWEs
-mapped into this category have the second most occurrences in
-applications. Cross-site Scripting is now part of this category in this
-edition.
+**A03:2021-Injection** rutscht auf die dritte Position ab. Es wurden 94% der an uns berichteten Anwendungen auf diverse Formen von Injections getestet. Die 33 dieser Kategorie zugeordneten CWEs, kommen am zweithäufigsten in diesen Anwendungen vor. Mit dieser Fassung der Top 10 wird Cross-Site Scripting Teil dieser Kategorie.
 
-**A04:2021-Insecure Design** is a new category for 2021, with a focus on
-risks related to design flaws. If we genuinely want to "move left" as an
-industry, it calls for more use of threat modeling, secure design
-patterns and principles, and reference architectures.
+**A04:2021-Unsicheres Design** ist als Kategorie neu in dieser Version und der Fokus liegt auf Risiken, die durch Schwächen im Design von Applikationen entstehen. Wenn wir uns als Branche im Software-Lebenszyklus ernsthaft nach Links bewegen wollen, bedarf es dafür des vermehrten Einsatzes von Bedrohungsmodellierung, sicherer Design-Muster und -Prinzipien sowie der Einbeziehung von Referenzarchitekturen.
 
-**A05:2021-Security Misconfiguration** moves up from #6 in the previous
-edition; 90% of applications were tested for some form of
-misconfiguration. With more shifts into highly configurable software,
-it's not surprising to see this category move up. The former category
-for XML External Entities (XXE) is now part of this category.
+**A05:2021-Sicherheitsrelevante Fehlkonfiguration** rückt 2021 einen Platz nach oben. Auf diese Schwäche wurden 90% der Applikationen getestet. Angesichts des Trends zu immer kleinteilig konfigurierbarer Software, ist es kaum eine Überraschung, dass diese Kategorie aufrückt. Die Kategorie *XML External Entities (XXE)* aus der vorherigen Version ist nun hier enthalten.
 
-**A06:2021-Vulnerable and Outdated Components** was previously titled
-*Using Components with Known Vulnerabilities* and is #2 in the industry
-survey, but also had enough data to make the Top 10 via data analysis.
-This category moves up from #9 in 2017 and is a known issue that we
-struggle to test and assess risk. It is the only category not to have
-any CVEs mapped to the included CWEs, so a default exploit and impact
-weights of 5.0 are factored into their scores.
+**A06:2021-Veraltete und verwundbare Komponenten** hieß 2017 noch *Nutzung von Komponenten mit bekannten Schwachstellen* und steht auf Platz zwei der von uns durchgeführten Umfrage. Auch ohne diese Popularität hätte es die Kategorie aufgrund der gelieferten Daten aber in die Top 10 geschafft. In der letzten Version befand sie sich noch auf Platz 9. Zwar handelt es sich um ein bekanntes Problem, doch bleibt es weiterhin schwierig zu testen ob eine Applikation wirklich von einer enthaltenen Schwachstelle betroffen ist und wie das Risiko einzuschätzen ist. Diese Kategorie ist auch die einzige bei der den CWEs keine CVEs zugeordnet sind. Deshalb haben wir die Bewertung auf Basis einer angenommenen Auswirkung von 5.0 bewertet. ??? (so a default exploit and impact
+weights of 5.0 are factored into their scores)
 
 **A07:2021-Identification and Authentication Failures** was previously
 *Broken Authentication* and is sliding down from the second position,
