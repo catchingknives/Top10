@@ -24,33 +24,13 @@ der enthaltenen Anwendungen auf verschiedenste Fehler in der Zugriffskontrolle g
 **A06:2021-Veraltete und verwundbare Komponenten** hieß 2017 noch *Nutzung von Komponenten mit bekannten Schwachstellen* und steht auf Platz zwei der von uns durchgeführten Umfrage. Auch ohne diese Popularität hätte es die Kategorie aufgrund der gelieferten Daten aber in die Top 10 geschafft. In der letzten Version befand sie sich noch auf Platz 9. Zwar handelt es sich um ein bekanntes Problem, doch bleibt es weiterhin schwierig zu testen ob eine Applikation wirklich von einer enthaltenen Schwachstelle betroffen ist und wie das Risiko einzuschätzen ist. Diese Kategorie ist auch die einzige bei der den CWEs keine CVEs zugeordnet sind. Deshalb haben wir die Bewertung auf Basis einer angenommenen Auswirkung von 5.0 bewertet. ??? (so a default exploit and impact
 weights of 5.0 are factored into their scores)
 
-**A07:2021-Identification and Authentication Failures** was previously
-*Broken Authentication* and is sliding down from the second position,
-and now includes CWEs that are more related to identification failures.
-This category is still an integral part of the Top 10, but the increased
-availability of standardized frameworks seems to be helping.
+**A07:2021-Identification and Authentication Failures**, vormals ** rutscht von der zweiten auf die siebte Position und enthält nun CWEs, die eher mit Fehlern in der Identifikation zu tun haben. Diese Kategorie ist nach wie vor ein wesentlicher Bestandteil der Top 10 aber die allgemeine Verfügbarkeit von standardisierten Frameworks scheint zu helfen.
 
-**A08:2021-Software and Data Integrity Failures** is a new category for
-2021, focusing on making assumptions related to software updates,
-critical data, and CI/CD pipelines without verifying integrity. One of
-the highest weighted impacts from CVE/CVSS data mapped to the 10 CWEs in
-this category. Insecure Deserialization from 2017 is now a part of this
-larger category.
+**A08:2021-Software and Data Integrity Failures** ist neu in der Top 10 und behandelt Annahmen die häufig über Software-Updates, kritische Daten und CI/CD-Pipelines getroffen werden ohne die Integrität der Daten zu prüfen. Eine der am höchsten gewichteten Auswirkungen aus CVE/CVSS-Daten sind mit den zehn CWEs in dieser Kategorie verbunden. *Unsichere Deserialisierung* aus der letzten Version ist nun in dieser Kategorie enthalten.
 
-**A09:2021-Security Logging and Monitoring Failures** was previously
-*Insufficient Logging &* Monitoring and is added from the industry
-survey (#3), moving up from #10 previously. This category is expanded to
-include more types of failures, is challenging to test for, and isn't
-well represented in the CVE/CVSS data. However, failures in this
-category can directly impact visibility, incident alerting, and
-forensics.
+**A09:2021-Security Logging and Monitoring Failures** hieß zuvor *Unzureichendes Logging & Moniting*, stammt aus der Branchen-Umfrage (Platz 3) und gewinnt dieses Jahr eine Position. Die Kategorie wurde um mehr Fehlertypen erweitert, ist aber schwierig zu testen und in CVE/CVSS-Daten nicht gut repräsentiert. Nichtsdestoweniger können Fehler in dieser Kategorie direkt die Transparenz, Alarmierungen im Rahmen von Incidents und forensische Bestrebungen beeinträchtigen.
 
-**A10:2021-Server-Side Request Forgery** is added from the industry
-survey (#1). The data shows a relatively low incidence rate with above
-average testing coverage, along with above-average ratings for Exploit
-and Impact potential. This category represents the scenario where the
-industry professionals are telling us this is important, even though
-it's not illustrated in the data at this time.
+**A10:2021-Server-Side Request Forgery** befindet sich auf Platz 1 der Branchen-Umfrage. Die Daten zeigen jedoch eine niedrige Inzidenz mit überdurchschnittlichen Bewertungen für sowohl die Testabdeckung als auch das Potential für Exploits und Auswirkungen. Diese Kategorie ist repräsentativ für ein Szenario in dem uns die Befragten mitteilen wie wichtig es ist, obwohl dies aus den Daten zur Zeit nicht ersichtlich ist.
 
 ## Methodology
 
